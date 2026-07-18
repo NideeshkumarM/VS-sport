@@ -1,0 +1,112 @@
+/* ==========================================================================
+   Responsive Styles for Sports Shop
+   ========================================================================== */
+
+/* Large Devices (Desktops, less than 1200px) */
+@media (max-width: 1199px) {
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .navbar-container {
+    flex-wrap: wrap;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+    order: -1; /* Place on the left */
+  }
+
+  .nav-links {
+    display: none; /* Hide by default */
+    order: 3;
+    width: 100%;
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+  }
+  
+  .nav-links.active {
+    display: flex; /* Show when JS adds the class */
+  }
+}
+
+/* Medium Devices (Tablets, less than 992px) */
+@media (max-width: 991px) {
+  .grid-4, .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .top-contact-info {
+    justify-content: center;
+  }
+  
+  .section {
+    padding: 60px 0;
+  }
+}
+
+/* Small Devices (Landscape phones, less than 768px) */
+@media (max-width: 767px) {
+  .top-contact-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+  }
+
+  /* Navbar layout changes are handled in the 1199px breakpoint now */
+  
+  .grid-4, .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section {
+    height: auto;
+    min-height: 500px;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .hero-content {
+    margin: 0 auto;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .video-wrapper iframe, .video-wrapper video {
+    height: 300px;
+  }
+}
+
+/* Extra Small Devices (Phones, less than 576px) */
+@media (max-width: 575px) {
+  
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .section {
+    padding: 50px 0;
+  }
+  
+  .footer-logo {
+    justify-content: center;
+  }
+  
+  .footer-desc, .footer h4 {
+    text-align: center;
+  }
+  
+  .footer-links {
+    text-align: center;
+  }
+}
