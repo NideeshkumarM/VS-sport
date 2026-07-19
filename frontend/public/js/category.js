@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function fetchProducts(category) {
-        // Fetch from Django API running on port 8000
-        fetch(`http://localhost:8000/api/products/?category=${encodeURIComponent(category)}`)
+        // Fetch from Django API running on Render
+        fetch(`https://vs-sport-3.onrender.com/api/products/?category=${encodeURIComponent(category)}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.className = 'product-card';
             
             // Django media url prefix for images
-            const imageUrl = product.image ? `http://localhost:8000/media/${product.image}` : '/images/products/kit.jpg';
+            const imageUrl = product.image ? `https://vs-sport-3.onrender.com/media/${product.image}` : '/images/products/kit.jpg';
 
             card.innerHTML = `
               <div class="product-img-wrapper">
