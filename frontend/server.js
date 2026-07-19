@@ -23,9 +23,9 @@ app.get('/contact', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'contact.html'));
 });
 
-// Route for the sports news page
-app.get('/sports-news', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'sports-news.html'));
+// Route for the category page
+app.get('/category', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'category.html'));
 });
 
 // Start the server

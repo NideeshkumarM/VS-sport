@@ -4,8 +4,8 @@
    ========================================================================== */
 :root {
   /* Colors */
-  --primary-blue: #0A58CA;       /* Trustworthy, medical-style blue */
-  --secondary-blue: #084298;
+  --primary-blue: #031633;       /* Changed to dark blue per request */
+  --secondary-blue: #010a18;
   --dark-blue: #031633;
   --accent-orange: #FD7E14;      /* Energetic, sports-focused orange */
   --accent-orange-hover: #E36100;
