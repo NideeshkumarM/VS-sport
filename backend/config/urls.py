@@ -16,9 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.http import HttpResponse
 from sportshop import views
 
+def home(request):
+    return HttpResponse("<h1>VS Sports Backend is Live! 🚀</h1><p>The API is running smoothly. Visit <a href='/api/products/'>/api/products/</a> to view the data.</p>")
+
 urlpatterns = [
+    path('', home, name='home'),
     path('admin/', admin.site.urls),
     path('api/categories/', views.get_categories, name='api_categories'),
     path('api/products/', views.get_products, name='api_products'),
